@@ -1,0 +1,5 @@
+{
+  "/api/cartinhas/[id]/route": "app/api/cartinhas/[id]/route.js",
+  "/api/cartinhas/route": "app/api/cartinhas/route.js",
+  "/page": "app/page.js"
+}
