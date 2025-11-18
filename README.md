@@ -1,36 +1,148 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📮 Sigilo Digital — Cartinhas Personalizadas
 
-## Getting Started
+Uma plataforma moderna, elegante e rápida para criar, editar e visualizar **cartinhas digitais personalizadas**, com fotos, mensagens especiais e músicas via embed do Spotify.
+Perfeito para presentes únicos, mensagens privadas e experiências personalizadas. ❤️✨
 
-First, run the development server:
+---
+
+## 🚀 Funcionalidades
+
+### 👤 Área Pública
+
+* Busca de cartinha por **ID único**
+* Exibição limpa e responsiva
+* Galeria de fotos com indicador
+* Texto formatado com espaçamento agradável
+* Player de música via **Spotify embed**
+
+### 🔐 Área Administrativa
+
+Área protegida (login necessário), com:
+
+* Criar cartinha
+* Editar cartinha
+* Excluir cartinha
+* Preencher texto, fotos e embed do Spotify
+* ID único obrigatório para cada cartão
+* Interface clara e moderna
+
+### ⚙️ API interna (REST)
+
+A aplicação opera sobre rotas padrão (compatível com Next.js):
+
+| Método | Rota                 | Função       |
+| ------ | -------------------- | ------------ |
+| GET    | `/api/cartinhas`     | Lista todas  |
+| GET    | `/api/cartinhas/:id` | Busca por ID |
+| POST   | `/api/cartinhas`     | Cria nova    |
+| PUT    | `/api/cartinhas/:id` | Atualiza     |
+| DELETE | `/api/cartinhas/:id` | Remove       |
+
+---
+
+## 🧩 Tecnologias Utilizadas
+
+* **React (TSX)**
+* **TailwindCSS**
+* **Lucide Icons**
+* **Fetch API**
+* **Gerenciamento de estado com useState**
+* **API local ou backend em /api**
+
+---
+
+## 🔐 Credenciais de Login (Admin)
+
+As credenciais padrão são:
+
+```
+email: email.brabo@email.com
+senha: Qnct3vwZ9djD8uTAZJxpYAXmB1s7NBq
+```
+
+> Importante: isso está **hardcoded** no arquivo.
+> Para produção, troque por autenticação real (JWT, OAuth, banco de dados, etc).
+
+---
+
+## 🗂 Estrutura do Projeto
+
+O componente principal fica em:
+
+```
+CartinhaDigital.tsx
+```
+
+Dentro dele vivem todas as partes:
+
+* Home
+* NotFound
+* CartinhaPage
+* Login
+* Painel Admin
+* Formulário
+* API local
+
+---
+
+## 🛠 Como Rodar o Projeto Localmente
+
+### 1️⃣ Clonar
+
+```bash
+git clone https://github.com/seu-usuario/seu-repo.git
+cd seu-repo
+```
+
+### 2️⃣ Instalar dependências
+
+```bash
+npm install
+```
+
+### 3️⃣ Rodar em modo de desenvolvimento
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4️⃣ Acessar no navegador
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧰 Variáveis de Ambiente (opcional)
 
-To learn more about Next.js, take a look at the following resources:
+Caso utilize `.env.local`:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🌍 Deploy na Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Suba o projeto para um repositório no GitHub
+2. Acesse: [https://vercel.com/import](https://vercel.com/import)
+3. Faça login com GitHub
+4. Selecione o repositório
+5. Clique em Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+A Vercel detecta automaticamente projetos React/Next.js.
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença **MIT**.
+Consulte o arquivo **LICENSE** na raiz do repositório.
+
+---
+
+## 💛 Créditos
+
+Criado com carinho por **Shai**, inovando a forma de enviar presentes digitais.

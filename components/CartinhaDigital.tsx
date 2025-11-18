@@ -4,7 +4,7 @@ import { Star, Heart, Sparkles, Mail, Lock, Plus, Edit2, Trash2, LogOut, Search,
 // API
 const api = {
   login(email, password) {
-    return email === "contato.shai@proton.me" && password === "OiOi()()";
+    return email === "email.brabo@email.com" && password === "Qnct3vwZ9djD8uTAZJxpYAXmB1s7NBq";
   },
 
   async getCartinha(id) {
