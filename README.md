@@ -90,8 +90,8 @@ Dentro dele vivem todas as partes:
 ### 1️⃣ Clonar
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
+git clone https://github.com/eoshai/sigilo-digital.git
+cd sigilo-digital
 ```
 
 ### 2️⃣ Instalar dependências
@@ -119,7 +119,7 @@ http://localhost:3000
 Caso utilize `.env.local`:
 
 ```
-NEXT_PUBLIC_BASE_URL=http://localhost:3000
+MONGODB_URI=http://localhost:3000
 ```
 
 ---
